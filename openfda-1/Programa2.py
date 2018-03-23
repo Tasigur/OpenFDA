@@ -11,9 +11,5 @@ repos_raw = r1.read().decode("utf-8")
 conn.close()
 
 repos = json.loads(repos_raw)
-ID=repos["results"][0]["id"]
-purpose=repos["results"][0]["purpose"][0]
-manufacturer=repos["results"][0]["openfda"]["manufacturer_name"][0]
-print("ID:",ID)
-print("purpose:",purpose)
-print("manufacturer:",manufacturer)
+for x in [10]:
+    print(["results"][0]["package_ndc"]["id"])
