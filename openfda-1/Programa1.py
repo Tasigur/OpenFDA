@@ -14,6 +14,6 @@ repos = json.loads(repos_raw)
 ID=repos["results"][0]["id"]
 purpose=repos["results"][0]["purpose"][0]
 manufacturer=repos["results"][0]["openfda"]["manufacturer_name"][0]
-print("IDd:",ID)
+print("ID:",ID)
 print("purpose:",purpose)
 print("manufacturer:",manufacturer)
