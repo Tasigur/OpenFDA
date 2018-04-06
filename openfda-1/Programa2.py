@@ -27,3 +27,4 @@ for x in range(10):
     except Exception:
         print("Not found")
     continue
+#para cada valor hasta el 10, tratamos de imprimir el valor deseado proveniente de los diccionarios a través de los cuales buscamos.
