@@ -2,7 +2,7 @@ import socketserver
 import http.client
 import json
 import http.server
-puerto=1801
+puerto=1807
 headers = {'User-Agent': 'http-client'}
 conn = http.client.HTTPSConnection("api.fda.gov")
 conn.request("GET", "/drug/label.json?limit=11", None, headers)
@@ -17,7 +17,7 @@ for x in range(a):# para los valores númericos hasta a; llamamos resultados a l
     resultados=repos["results"][x]
     if resultados["openfda"]:#si existe un valor para resultados con clave "openfda" añadimos el valor con clave "manufacturer_name" a la lista originalmente vacía todos.
         todos.append(resultados["openfda"]["manufacturer_name"][0])
-print(todos)#imrpimimos esa lista
+print(todos)#imprimimos esa lista
 print("A")
 class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):

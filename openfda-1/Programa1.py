@@ -16,4 +16,4 @@ purpose=repos["results"][0]["purpose"][0]
 manufacturer=repos["results"][0]["openfda"]["manufacturer_name"][0]#cada variable impresa es el valor asignado a la clave correspondiente.
 print("ID:",ID)
 print("purpose:",purpose)
-print("manufacturer:",manufacturer)
+print("manufacturer:",manufacturer
