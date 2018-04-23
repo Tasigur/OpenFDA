@@ -26,7 +26,7 @@ x="XXXXXXXXXXXXXXXXXXXXXXXXXXx"
 
 @app.route('/empdb',methods=['GET'])
 def getAllEmp():
-    return (todos)
+    return (x)
 @app.route('/empdb/<empId>',methods=['GET'])
 def getEmp(empId):
     usr = [ emp for emp in empDB if (emp['id'] == empId) ]
